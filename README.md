@@ -62,3 +62,17 @@ node parser.js --input ./app.log --output ./errors.json
 ```text
 [{"timestamp":1628475171259,"loglevel":"error","transactionId":"9abc55b2-807b-4361-9dbe-aa88b1b2e978","err":"Not found"}]
 ```
+
+#### Usage
+
+The expected usage section is kind of odd as this suppose to be a typescript project and storing transpiled .js files in VCS does not make sense. So, first project needs to be built to run 
+```bash
+#build
+npm run build
+#run
+npm start -- --input ./app.log --output ./errors.json
+#or
+node build/parser.js --input ./app.log --output ./errors.json
+#or for development mode run using ts-node
+npm run start:dev -- --input ./app.log --output ./errors.json
+```
