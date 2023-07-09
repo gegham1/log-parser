@@ -69,10 +69,12 @@ The expected usage section is kind of odd as this suppose to be a typescript pro
 ```bash
 #build
 npm run build
+
 #run
 npm start -- --input ./app.log --output ./errors.json
 #or
 node build/parser.js --input ./app.log --output ./errors.json
+
 #or for development mode run using ts-node
 npm run start:dev -- --input ./app.log --output ./errors.json
 ```
