@@ -65,7 +65,7 @@ node parser.js --input ./app.log --output ./errors.json
 
 #### Usage
 
-The expected usage section is kind of odd as this suppose to be a typescript project and storing transpiled .js files in VCS does not make sense. So, first project needs to be built to run 
+The expected usage section is kind of odd (tries to run js file) as this suppose to be a typescript project and storing transpiled .js files in VCS does not make sense. So, first project needs to be built to run 
 ```bash
 #build
 npm run build

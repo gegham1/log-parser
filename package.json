@@ -5,6 +5,7 @@
   "main": "src/parser.js",
   "scripts": {
     "test": "jest",
+    "test:coverage": "jest --runInBand --coverage",
     "start": "node build/parser.js",
     "start:dev": "node -r ts-node/register src/parser.ts",
     "build": "tsc"
@@ -20,6 +21,7 @@
     "@types/split": "^1.0.2",
     "@types/yargs": "^17.0.24",
     "jest": "^29.6.1",
+    "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   },

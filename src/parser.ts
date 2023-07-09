@@ -6,7 +6,7 @@ import { LogLevel } from './Log';
 import { LogParser } from './LogParser';
 import { JsonSerializer } from './JsonSerializer';
 
-export async function getFilesPath(): Promise<{input: string, output: string}> {
+async function getFilesPath(): Promise<{input: string, output: string}> {
 	const argv = await yargs(process.argv.slice(2)).argv;
 
 	if (!argv.input || !argv.output) {
